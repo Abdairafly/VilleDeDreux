@@ -1,0 +1,113 @@
+.container {  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 29px 100px 400px auto 30%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "resau resau resau"
+    "menu menu menu"
+    ". dreuxRecrute ."
+    ". postes ."
+    "footer footer footer";
+}
+
+.footer { grid-area: footer; }
+
+
+
+.dreuxRecrute { grid-area: dreuxRecrute;
+margin: auto; }
+.dreuxRecrute {
+  text-align: left;
+}
+
+.postes {  display: grid;
+  margin-top: 25px;
+  grid-template-columns: 47% 1fr 47%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  gap: 5px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . .";
+  grid-area: postes;
+}
+
+.postes p{
+  text-align: left;
+}
+
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+.title_recrute{
+  text-align: left;
+}
+.dreuxRecrute_adresse{
+  background-color: #f6f6f6; 
+  text-align: center;
+  font-weight: bold;
+}
+
+.dreuxRecrute h1{
+  text-align: center;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-1 {
+  background: #2b47b8;
+  background: linear-gradient(0deg, #2b47b8 0%, #223993 100%);
+  border: none;
+}
+.btn-1:hover {
+   background: #fbff85cf;
+background: linear-gradient(0deg, #fbff85cf 0%, #f9ff59cf 100%);
+}
+
+/* For presentation only, no need to copy the code below */
+/*.container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.container *:after {
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+
